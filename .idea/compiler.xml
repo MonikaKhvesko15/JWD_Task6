@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JWD_Task6" />
+        <module name="JWD_TASK6" />
       </profile>
     </annotationProcessing>
   </component>
