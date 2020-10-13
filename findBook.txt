@@ -1,0 +1,2 @@
+Book{title='Hamlet', author='WilliamShakespeare', numbOfPages=100, price=98.0}
+Book{title='TheLittlePrince', author='AntoinedeSaint-Exupery', numbOfPages=100, price=45.5}
