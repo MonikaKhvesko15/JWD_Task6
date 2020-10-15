@@ -8,5 +8,5 @@ import java.util.List;
 import java.util.Set;
 
 public interface SearchBook {
-    Set<Book> findBook(String value, Set<Book> books) throws DataException;
+    List<Book> findBook(String value, List<Book> books) throws DataException;
 }

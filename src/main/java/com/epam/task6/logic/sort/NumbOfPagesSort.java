@@ -10,15 +10,12 @@ import java.util.*;
 
 public class NumbOfPagesSort implements SortBook {
     @Override
-    public Set<Book> sortBook(Set<Book> books) throws DataException {
+    public List<Book> sortBook(List<Book> books) throws DataException {
         Comparator<Book> comparator = new NumbOfPagesComparator();
         List<Book> booksSorted = new ArrayList<>(books);
 
         Collections.sort(booksSorted, comparator);
 
-        LinkedHashSet<Book> result = new LinkedHashSet<>(booksSorted);
-        result.addAll(booksSorted);
-
-        return result;
+        return booksSorted;
     }
 }

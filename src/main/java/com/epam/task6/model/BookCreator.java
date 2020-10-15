@@ -1,5 +1,6 @@
 package com.epam.task6.model;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -8,8 +9,8 @@ public class BookCreator {
 
     public static final String REGEX = "\\s+";
 
-    public Set<Book> createList(List<String> lines) {
-        Set<Book> books = new HashSet<>();
+    public List<Book> createList(List<String> lines) {
+        List<Book> books = new ArrayList<>();
         for (String l : lines
         ) {
             Book book = createBook(l);

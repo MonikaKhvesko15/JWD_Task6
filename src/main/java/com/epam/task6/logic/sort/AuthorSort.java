@@ -11,15 +11,12 @@ import java.util.*;
 public class AuthorSort implements SortBook {
 
     @Override
-    public Set<Book> sortBook(Set<Book> books) throws DataException {
+    public List<Book> sortBook(List<Book> books) throws DataException {
         Comparator<Book> comparator = new AuthorComparator();
         List<Book> booksSorted = new ArrayList<>(books);
 
         Collections.sort(booksSorted, comparator);
 
-        LinkedHashSet<Book> result = new LinkedHashSet<>(booksSorted);
-        result.addAll(booksSorted);
-
-        return result;
+        return booksSorted;
     }
 }

@@ -11,14 +11,14 @@ import com.epam.task6.model.BookCreator;
 import com.epam.task6.view.FilePrinterFactory;
 import com.epam.task6.view.PrintFactory;
 import com.epam.task6.view.Printer;
+import org.apache.log4j.Logger;
 
 import java.util.List;
-import java.util.Set;
-import java.util.logging.Logger;
+
 
 public class Main {
 
-    private static final Logger LOGGER = Logger.getLogger(String.valueOf(Main.class));
+    private static final Logger LOGGER = Logger.getLogger(Main.class);
 
     public static final String FILE_INPUT_TXT = "src/input.txt";
     public static final String FILE_OUTPUT_TXT = "src/output.txt";
@@ -36,7 +36,7 @@ public class Main {
         LOGGER.info("Data received from file: " + FILE_INPUT_TXT);
 
         BookCreator bookCreator = new BookCreator();
-        Set<Book> books = bookCreator.createList(bookList);
+        List<Book> books = bookCreator.createList(bookList);
         LOGGER.info("Book Set created " + books);
 
         DAO bookDAO = new BookDAO(books);
@@ -50,18 +50,18 @@ public class Main {
         bookDAO.remove(bookRemove);
         LOGGER.info("Book " + bookRemove + " removed from books " + books);
 
-        Set<Book> findBook = bookDAO.findByTag(Field.PRICE, "45.5");//TITLE,AUTHOR,PAGES;
+        List<Book> findBook = bookDAO.findByTag(Field.PRICE, "45.5");//TITLE,AUTHOR,PAGES;
         LOGGER.info("Books found: " + findBook);
 
-        Set<Book> sortedBook = bookDAO.sortByTag(Field.TITLE);//AUTHOR,PAGES,PRICE;
+        List<Book> sortedBook = bookDAO.sortByTag(Field.TITLE);//AUTHOR,PAGES,PRICE;
         LOGGER.info("Book sorted: " + sortedBook);
 
         PrintFactory printFactory = new FilePrinterFactory();
         Printer printer = printFactory.createPrinter();
 
-        printer.printSetBooks(bookDAO.getAll(), FILE_OUTPUT_TXT);
-        printer.printSetBooks(findBook, FIND_BOOK_TXT);
-        printer.printSetBooks(sortedBook, SORTED_BOOKS_TXT);
+        printer.printListBooks(bookDAO.getAll(), FILE_OUTPUT_TXT);
+        printer.printListBooks(findBook, FIND_BOOK_TXT);
+        printer.printListBooks(sortedBook, SORTED_BOOKS_TXT);
         LOGGER.info("Completed successfully");
     }
 }
