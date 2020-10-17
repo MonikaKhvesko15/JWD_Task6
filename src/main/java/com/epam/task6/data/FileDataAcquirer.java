@@ -1,7 +1,5 @@
 package com.epam.task6.data;
 
-import com.epam.task6.model.Book;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;

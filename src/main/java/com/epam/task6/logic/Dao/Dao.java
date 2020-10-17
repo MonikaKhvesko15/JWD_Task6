@@ -1,14 +1,11 @@
-package com.epam.task6.logic.DAO;
+package com.epam.task6.logic.Dao;
 
 import com.epam.task6.data.DataException;
 import com.epam.task6.logic.Field;
-import com.epam.task6.model.Book;
 
-import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Set;
 
-public interface DAO<T> {
+public interface Dao<T> {
 
     List<T> getAll();
 

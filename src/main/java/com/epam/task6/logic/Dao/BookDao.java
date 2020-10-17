@@ -1,4 +1,4 @@
-package com.epam.task6.logic.DAO;
+package com.epam.task6.logic.Dao;
 
 import com.epam.task6.data.DataException;
 import com.epam.task6.logic.Field;
@@ -13,10 +13,10 @@ import com.epam.task6.model.Book;
 import java.util.List;
 
 
-public class BookDAO implements DAO<Book> {
+public class BookDao implements Dao<Book> {
     private List<Book> books;
 
-    public BookDAO(List<Book> books) {
+    public BookDao(List<Book> books) {
         this.books = books;
     }
 
