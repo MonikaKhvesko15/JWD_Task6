@@ -5,7 +5,7 @@ import com.epam.task6.model.Book;
 public class TitleComparator implements Comparator<Book> {
 
     @Override
-    public int compare(Book o1, Book o2) {
-        return o1.getTitle().compareTo(o2.getTitle());
+    public int compare(Book firstBook, Book secondBook) {
+        return firstBook.getTitle().compareTo(secondBook.getTitle());
     }
 }

@@ -3,10 +3,10 @@ package com.epam.task6.logic.comparator;
 import com.epam.task6.model.Book;
 
 public interface Comparator<T> extends java.util.Comparator<T> {
-    public int compare(Book o1, Book o2);
+    int compare(Book firstBook, Book secondBook);
 
     @Override
-    int compare(T o1, T o2);
+    int compare(T firstBook, T secondBook);
 
     @Override
     boolean equals(Object obj);

@@ -1,10 +1,6 @@
 package com.epam.task6.logic.sort.factory;
 
 import com.epam.task6.logic.Field;
-import com.epam.task6.logic.search.AuthorSearch;
-import com.epam.task6.logic.search.NumbOfPagesSearch;
-import com.epam.task6.logic.search.PriceSearch;
-import com.epam.task6.logic.search.TitleSearch;
 import com.epam.task6.logic.sort.*;
 
 public class SortBookFactory implements CreateSort{

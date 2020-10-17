@@ -23,8 +23,8 @@ public class BookCreator {
         String[] words = line.split(REGEX);
         String title = words[0];
         String author = words[1];
-        Integer numbOfPages = Integer.parseInt(words[2]);
-        Double price = Double.parseDouble(words[3]);
+        int numbOfPages = Integer.parseInt(words[2]);
+        double price = Double.parseDouble(words[3]);
 
         return new Book(title, author, numbOfPages, price);
     }

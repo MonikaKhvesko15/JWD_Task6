@@ -8,6 +8,6 @@ import java.util.Set;
 
 public interface Printer {
 
-    void printListBooks(List<Book> books, String filename) throws IOException, Exception;
+    void printListBooks(List<Book> books, String filename) throws Exception;
 
 }

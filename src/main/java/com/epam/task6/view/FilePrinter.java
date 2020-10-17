@@ -4,7 +4,6 @@ import com.epam.task6.model.Book;
 
 import java.io.*;
 import java.util.List;
-import java.util.Set;
 
 public class FilePrinter implements Printer {
 
