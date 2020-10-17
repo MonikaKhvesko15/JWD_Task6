@@ -40,11 +40,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b9335c9-3d73-4f79-a7cf-5914ff292e93" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/task6/data/DataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2b9335c9-3d73-4f79-a7cf-5914ff292e93" name="Default Changelist" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
