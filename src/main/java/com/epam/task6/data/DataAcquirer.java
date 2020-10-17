@@ -6,5 +6,5 @@ import java.io.IOException;
 import java.util.List;
 
 public interface DataAcquirer {
-    List<String> getData(String filename) throws IOException, DataException;
+    List<String> getData(String filename) throws IOException,  DataException;
 }
