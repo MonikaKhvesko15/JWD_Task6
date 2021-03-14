@@ -1,0 +1,5 @@
+TheGreatGatsby F.Scott 150 189.00
+JaneEyre CharlotteBronte 420 35.00
+ATaleofTwoCities CharlesDickens 400 120.00
+Hamlet WilliamShakespeare 100 98.00
+Dracula BramStoker 260 76.00

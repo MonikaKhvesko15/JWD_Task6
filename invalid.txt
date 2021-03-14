@@ -1,0 +1,1 @@
+Book{title='TheGreatGatsby', author='F.Scott', numbOfPages=150, price=189.0}
