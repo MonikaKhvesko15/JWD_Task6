@@ -1,0 +1,5 @@
+Book{title='ATaleofTwoCities', author='CharlesDickens', numbOfPages=400, price=120.0}
+Book{title='Dracula', author='BramStoker', numbOfPages=260, price=76.0}
+Book{title='Hamlet', author='WilliamShakespeare', numbOfPages=100, price=98.0}
+Book{title='JaneEyre', author='CharlotteBronte', numbOfPages=420, price=35.0}
+Book{title='TheLittlePrince', author='AntoinedeSaint-Exupery', numbOfPages=100, price=45.5}
